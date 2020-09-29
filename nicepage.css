@@ -30321,9 +30321,8 @@ a.u-link.u-text-hover-grey-90:hover {
 .u-header .u-menu-1 {margin: -54px 31px 24px auto}
 .u-header .u-nav-1 {font-size: 0.75rem; letter-spacing: 0; text-transform: uppercase; background-image: none; font-weight: 400; font-family: Roboto, sans-serif}
 .u-header .u-nav-2 {font-size: 1rem} 
-@media (max-width: 1199px){ .u-header .u-image-1 {width: 80px; height: 40px}
-.u-header .u-menu-1 {margin-top: -54px; margin-right: 0} }
-@media (max-width: 991px){ .u-header .u-image-1 {width: 143px}
+@media (max-width: 1199px){ .u-header .u-menu-1 {margin-top: -54px; margin-right: 0} }
+@media (max-width: 991px){ .u-header .u-image-1 {width: 143px; height: 40px}
 .u-header .u-menu-1 {width: auto; margin-right: 66px} }
 @media (max-width: 767px){ .u-header .u-image-1 {width: 80px}
 .u-header .u-menu-1 {margin-right: 0} }
@@ -30342,15 +30341,15 @@ a.u-link.u-text-hover-grey-90:hover {
 .u-footer .u-text-2 {width: auto; margin-right: 334px; margin-left: 382px} }
 @media (max-width: 991px){ .u-footer .u-sheet-1 {min-height: 413px}
 .u-footer .u-social-icons-1 {margin-top: 330px; margin-right: auto}
-.u-footer .u-text-1 {margin-top: -359px; margin-left: 45px; margin-right: 45px}
-.u-footer .u-text-2 {width: 271px; margin: 28px 225px 60px} }
+.u-footer .u-text-1 {margin-top: -340px; margin-left: 45px; margin-right: 45px}
+.u-footer .u-text-2 {width: 271px; margin: 18px 225px 60px 225px} }
 @media (max-width: 767px){ .u-footer .u-sheet-1 {min-height: 418px}
-.u-footer .u-text-1 {margin-top: -359px; margin-left: 45px; margin-right: 45px}
+.u-footer .u-text-1 {margin-left: 45px; margin-right: 45px}
 .u-footer .u-text-2 {margin-left: 135px; margin-right: 135px} }
 @media (max-width: 575px){ .u-footer .u-sheet-1 {min-height: 322px}
 .u-footer .u-social-icons-1 {height: 36px; width: 82px; margin-top: 261px}
 .u-footer .u-text-1 {font-size: 0.875rem; margin-top: -264px; margin-left: 9px; margin-right: 9px}
-.u-footer .u-text-2 {font-size: 0.875rem; width: 270px; margin-top: 25px; margin-left: 35px; margin-right: 35px} }
+.u-footer .u-text-2 {font-size: 0.875rem; width: 270px; margin-top: 25px; margin-left: 34px; margin-right: 35px} }
 
  /*begin-variables base-font-size*/ 
  html { font-size: 16px; }
