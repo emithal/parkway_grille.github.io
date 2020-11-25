@@ -30322,12 +30322,11 @@ a.u-link.u-text-hover-grey-90:hover {
 .u-header .u-nav-1 {font-size: 0.75rem; letter-spacing: 0; text-transform: uppercase; background-image: none; font-weight: 400; font-family: Roboto, sans-serif}
 .u-header .u-nav-2 {font-size: 1rem} 
 @media (max-width: 1199px){ .u-header .u-menu-1 {margin-top: -54px; margin-right: 0} }
-@media (max-width: 991px){ .u-header .u-image-1 {width: 143px; height: 40px}
-.u-header .u-menu-1 {width: auto; margin-right: 66px} }
-@media (max-width: 767px){ .u-header .u-image-1 {width: 80px}
+@media (max-width: 991px){ .u-header .u-menu-1 {width: auto; margin-right: 66px} }
+@media (max-width: 767px){ .u-header .u-image-1 {width: 80px; height: 40px}
 .u-header .u-menu-1 {margin-right: 0} }
 @media (max-width: 575px){ .u-header .u-sheet-1 {min-height: 86px}
-.u-header .u-image-1 {margin-top: 13px; margin-left: 0; width: auto}
+.u-header .u-image-1 {margin-top: 13px; margin-left: 0; width: 143px}
 .u-header .u-logo-image-1 {max-width: 134px; max-height: 134px}
 .u-header .u-menu-1 {margin-top: -49px} }
  .u-footer .u-sheet-1 {min-height: 229px}
@@ -30356,7 +30355,7 @@ a.u-link.u-text-hover-grey-90:hover {
 .u-footer .u-social-icons-1 {height: 36px; width: 82px; margin-top: 260px; margin-right: 104px}
 .u-footer .u-text-1 {font-size: 0.875rem; margin-top: -256px; margin-left: 9px; margin-right: 9px}
 .u-footer .u-text-2 {font-size: 0.875rem; width: 270px; margin-top: 26px; margin-left: 35px; margin-right: 35px}
-.u-footer .u-icon-3 {height: 36px !important; width: 36px !important; margin-top: 40px; margin-bottom: 42px; margin-left: 109px} }
+.u-footer .u-icon-3 {height: 36px; width: 36px; margin-top: 40px; margin-bottom: 42px; margin-left: 109px} }
 
  /*begin-variables base-font-size*/ 
  html { font-size: 16px; }
