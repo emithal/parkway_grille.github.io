@@ -66,7 +66,7 @@
     margin-top: 174px;
   }
 }.u-section-2 .u-sheet-1 {
-  min-height: 844px;
+  min-height: 1000px;
 }
 
 .u-section-2 .u-text-1 {
@@ -119,6 +119,15 @@
   font-weight: 300;
   text-decoration: none !important;
   margin: 88px 826px 0 15px;
+}
+.u-section-2 .u-text-5.subtitle {
+  letter-spacing: 0px;
+  text-transform: none;
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-decoration: none !important;
+  display: block;
+  margin: 20px 826px 0 15px;
 }
 
 .u-section-2 .u-text-6 {
@@ -509,6 +518,16 @@
   font-weight: 300;
   text-decoration: underline !important;
   margin: 13px 421px 0;
+}
+
+.u-section-3 .u-text-1.menu-itm {
+  letter-spacing: 0px;
+  text-transform: none;
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-decoration: none !important;
+  margin: 25px 0px 0;
+  display:block;
 }
 
 .u-section-3 .u-btn-1 {

@@ -8249,6 +8249,9 @@ ul.u-text li:last-child {
   .u-hidden-xl {
     display: none !important;
   }
+  .icn-tr {
+    transform: translateY(2rem);
+  }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .u-hidden-lg {
@@ -34353,7 +34356,7 @@ a.u-link.u-text-hover-grey-90:hover {
 
 .u-footer .u-text-4 {
   font-size: 1.25rem;
-  margin: 44px 351px 0 386px;
+  margin: 70px 351px 0 386px;
 }
 
 .u-footer .u-social-icons-1 {
@@ -34375,7 +34378,7 @@ a.u-link.u-text-hover-grey-90:hover {
 
 .u-footer .u-text-5 {
   font-size: 1.25rem;
-  margin: -48px 797px 0 49px;
+  margin: -80px 797px 0 49px;
 }
 
 .u-footer .u-icon-3 {
