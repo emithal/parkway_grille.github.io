@@ -164,6 +164,7 @@
   font-size: 1.25rem;
   font-weight: 700;
   margin: 494px 875px 0 58px;
+  transform:translateY(30px);
 }
 
 .u-section-2 .u-custom-html-1 {
@@ -225,6 +226,11 @@
   animation-duration: 1000ms;
   margin: -25px auto 0;
   padding: 10px 25px 10px 23px;
+  transform: translateY(30px);
+}
+
+.qr-code {
+  transform: translateY(35px);
 }
 
 .u-section-2 .u-image-1 {
@@ -238,6 +244,18 @@
   font-weight: 700;
   margin: -385px auto 60px 86px;
   padding: 0;
+}
+
+.u-section-2 .u-btn-14 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: -45px auto 60px 86px;
+  padding: 0;
+}
+
+.transform-btn {
+  transform: translateY(30px) !important;
+  display:none;
 }
 
 @media (max-width: 1199px) {
@@ -618,6 +636,13 @@
   font-size: 1.25rem;
   font-weight: 700;
   margin: -462px auto 60px;
+  padding: 0;
+}
+
+.u-section-3 .u-btn-17 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: -45px auto 60px;
   padding: 0;
 }
 
