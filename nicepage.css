@@ -17146,6 +17146,7 @@ p {
 @media (max-width: 575px) {
   .u-align-center-xs {
     text-align: center;
+    margin-top:10rem;
   }
 }
 .u-align-right {

@@ -145,13 +145,13 @@
 .u-section-2 .u-btn-7 {
   font-size: 1.25rem;
   font-weight: 700;
-  margin: 15px auto 0 97px;
+  margin: 5px auto 0 97px;
   padding: 0;
 }
 
 .u-section-2 .u-text-7 {
   font-size: 1.25rem;
-  margin: 15px 917px 0 94px;
+  margin: 5px 917px 0 94px;
 }
 
 .u-section-2 .u-btn-8 {
@@ -164,7 +164,7 @@
   font-size: 1.25rem;
   font-weight: 700;
   margin: 494px 875px 0 58px;
-  transform:translateY(30px);
+  transform:translateY(6rem);
 }
 
 .u-section-2 .u-custom-html-1 {
@@ -174,7 +174,7 @@
 
 .u-section-2 .u-text-9 {
   font-size: 1.25rem;
-  margin: -513px 925px 0 102px;
+  margin: -620px 925px 0 95px;
 }
 
 .u-section-2 .u-btn-9 {
@@ -185,7 +185,7 @@
 
 .u-section-2 .u-text-10 {
   font-size: 1.25rem;
-  margin: 15px 881px 0 66px;
+  margin: 5px 881px 0 66px;
 }
 
 .u-section-2 .u-btn-10 {
@@ -196,7 +196,7 @@
 
 .u-section-2 .u-list-1 {
   width: 277px;
-  margin: 63px auto 0 23px;
+  margin: 38px auto 0 23px;
 }
 
 .u-section-2 .u-repeater-1 {
@@ -224,9 +224,9 @@
   border-style: none;
   box-shadow: 0 2px 15px 0 rgba(0,0,0,1);
   animation-duration: 1000ms;
-  margin: -25px auto 0;
+  margin: 0px auto 0;
   padding: 10px 25px 10px 23px;
-  transform: translateY(30px);
+  transform: translateY(6rem);
 }
 
 .qr-code {
@@ -237,19 +237,32 @@
   width: 249px;
   height: 248px;
   margin: -9px auto 0 34px;
+  transform: translateY(7rem);
 }
 
 .u-section-2 .u-btn-13 {
   font-size: 1.25rem;
   font-weight: 700;
-  margin: -385px auto 60px 86px;
+  margin: -385px auto 60px 88px;
   padding: 0;
 }
 
 .u-section-2 .u-btn-14 {
   font-size: 1.25rem;
   font-weight: 700;
-  margin: -45px auto 60px 86px;
+  margin: -53px auto 60px 88px;
+  padding: 0;
+}
+.u-section-2 .u-btn-15 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: -54px auto 60px 88px;
+  padding: 0;
+}
+.u-section-2 .u-btn-16 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: -54px auto 60px 78px;
   padding: 0;
 }
 
@@ -624,6 +637,7 @@
   width: 249px;
   height: 248px;
   margin: 8px auto 0 0;
+  transform:translateY(7rem);
 }
 
 .u-section-3 .u-text-5 {
@@ -840,6 +854,7 @@
     margin-top: 12px;
     margin-left: auto;
     margin-right: auto;
+    transform:translateY(6rem);
   }
 
   .u-section-3 .u-btn-7 {
