@@ -226,7 +226,7 @@
   animation-duration: 1000ms;
   margin: 0px auto 0;
   padding: 10px 25px 10px 23px;
-  transform: translateY(6rem);
+  transform: translateY(5rem);
 }
 
 .qr-code {
@@ -250,7 +250,7 @@
 .u-section-2 .u-btn-14 {
   font-size: 1.25rem;
   font-weight: 700;
-  margin: -53px auto 60px 88px;
+  margin: -53px auto 60px 93px;
   padding: 0;
 }
 .u-section-2 .u-btn-15 {
