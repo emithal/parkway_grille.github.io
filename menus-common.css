@@ -203,7 +203,7 @@
 .pg-footer-box {
   text-align: center;
   font-family: Raleway, sans-serif;
-  font-size: clamp(1.1rem, 1.5vw, 2rem);
+  font-size: clamp(0.88rem, 1.2vw, 1.6rem);
   line-height: 1.45;
 }
 
