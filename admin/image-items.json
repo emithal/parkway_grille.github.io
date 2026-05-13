@@ -1,0 +1,58 @@
+[
+  {
+    "key": "hero-bg",
+    "label": "Homepage Hero Background",
+    "page": "Home",
+    "path": "/images/image11.png",
+    "width": 1600,
+    "height": 900
+  },
+  {
+    "key": "hero-logo",
+    "label": "Homepage Hero Logo",
+    "page": "Home",
+    "path": "/images/ParkwayGrilleLogogold.png",
+    "width": 970,
+    "height": 1018
+  },
+  {
+    "key": "header-logo",
+    "label": "Header Logo",
+    "page": "All Pages",
+    "path": "/images/ParkwayGrilleLogogold1.png",
+    "width": 143,
+    "height": 160
+  },
+  {
+    "key": "people",
+    "label": "People Section Image",
+    "page": "Home",
+    "path": "/images/people.jpg",
+    "width": 640,
+    "height": 427
+  },
+  {
+    "key": "drinks",
+    "label": "Drinks Section Image",
+    "page": "Home",
+    "path": "/images/drinks.jpg",
+    "width": 4928,
+    "height": 3264
+  },
+  {
+    "key": "chef",
+    "label": "Chef Section Image",
+    "page": "Home",
+    "path": "/images/chef.jpg",
+    "width": 640,
+    "height": 426
+  },
+  {
+    "key": "qr",
+    "label": "QR Code",
+    "page": "Menus",
+    "path": "/images/QR1.png",
+    "width": 300,
+    "height": 300
+  }
+]

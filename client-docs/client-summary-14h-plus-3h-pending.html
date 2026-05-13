@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Parkway Grille - Project Summary and Time Breakdown</title>
+  <style>
+    :root {
+      --text: #1b1f2a;
+      --muted: #5a6478;
+      --line: #d7dcea;
+      --accent: #b7902a;
+      --bg: #f6f8fc;
+      --white: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.45;
+    }
+    .page {
+      max-width: 960px;
+      margin: 28px auto;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 28px;
+    }
+    h1 {
+      margin: 0 0 6px;
+      font-size: 30px;
+      font-weight: 700;
+    }
+    h2 {
+      margin: 26px 0 10px;
+      font-size: 20px;
+      border-bottom: 2px solid var(--line);
+      padding-bottom: 6px;
+    }
+    p { margin: 8px 0; }
+    .muted { color: var(--muted); }
+    .summary {
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--accent);
+      background: #fffdf7;
+      padding: 12px 14px;
+      border-radius: 8px;
+      margin-top: 14px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 8px;
+      font-size: 15px;
+    }
+    th, td {
+      border: 1px solid var(--line);
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: #f1f4fb;
+      font-weight: 700;
+    }
+    .hours {
+      text-align: right;
+      white-space: nowrap;
+      font-weight: 700;
+    }
+    .total-row td {
+      background: #f7f9ff;
+      font-weight: 700;
+    }
+    ul {
+      margin: 8px 0 0 18px;
+      padding: 0;
+    }
+    li { margin: 4px 0; }
+    .footer-note {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media print {
+      body { background: #fff; }
+      .page {
+        margin: 0;
+        border: 0;
+        border-radius: 0;
+        max-width: none;
+        padding: 0;
+      }
+      .no-print { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <h1>Parkway Grille Website Project Summary</h1>
+    <p class="muted">Prepared for client review</p>
+
+    <div class="summary">
+      <p><strong>Completed Work:</strong> 14.0 hours</p>
+      <p><strong>Pending Work:</strong> 3.0 hours (admin training video + SEO outsourcing onboarding documentation)</p>
+      <p><strong>Total Current Scope:</strong> 17.0 hours</p>
+      <p><strong>Rate:</strong> $100/hour</p>
+      <p><strong>Completed Value:</strong> $1,400</p>
+      <p><strong>Pending Value:</strong> $300</p>
+      <p><strong>Total Project Value (current scope):</strong> $1,700</p>
+    </div>
+
+    <h2>Completed Work Breakdown (14.0 Hours)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Workstream</th>
+          <th>Scope Delivered</th>
+          <th class="hours">Hours</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Page renovation and structure cleanup</td>
+          <td>Reworked core pages while preserving legacy look and brand feel; removed duplicate/extra page clutter; aligned page structure to clean, maintainable HTML/CSS patterns.</td>
+          <td class="hours">3.5</td>
+        </tr>
+        <tr>
+          <td>Menu system overhaul</td>
+          <td>Standardized menu pages with shared styling and behavior; fixed broken menu list layout; added/updated Brunch and Late Night options; added dedicated Brunch route/page behavior for desktop and mobile consistency.</td>
+          <td class="hours">3.0</td>
+        </tr>
+        <tr>
+          <td>Navigation and UX polish</td>
+          <td>Improved top navigation consistency; added menu dropdown behavior across pages; aligned homepage and menu interactions; addressed spacing and visual continuity issues.</td>
+          <td class="hours">1.5</td>
+        </tr>
+        <tr>
+          <td>Footer modernization</td>
+          <td>Rebuilt footer markup/CSS to match existing visual style with cleaner code; centered content layout and standardized footer presentation across key pages.</td>
+          <td class="hours">1.0</td>
+        </tr>
+        <tr>
+          <td>SEO foundation implementation</td>
+          <td>Implemented baseline on-page/local SEO technical setup: metadata cleanup (titles/descriptions/canonical/OG), sitemap and robots setup, improved URL structure support, and schema markup alignment for restaurant/local context.</td>
+          <td class="hours">2.0</td>
+        </tr>
+        <tr>
+          <td>Admin panel planning and build prep</td>
+          <td>Built and refined simple admin interface concept for non-technical updates (menus/media), including login flow and publishing architecture prep to support future no-token client workflow.</td>
+          <td class="hours">2.0</td>
+        </tr>
+        <tr>
+          <td>Deployment and QA pass</td>
+          <td>Version control cleanup, commit/publish flow, route validation, menu link verification, and production push to GitHub Pages source branch.</td>
+          <td class="hours">1.0</td>
+        </tr>
+        <tr class="total-row">
+          <td colspan="2">Total Completed</td>
+          <td class="hours">14.0</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Pending Work Breakdown (3.0 Hours)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Pending Item</th>
+          <th>Scope</th>
+          <th class="hours">Hours</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Admin training video</td>
+          <td>Record a short guided walkthrough for client use: login, swapping images/PDF menus, saving changes, and basic troubleshooting.</td>
+          <td class="hours">1.0</td>
+        </tr>
+        <tr>
+          <td>SEO outsourcing plan and hiring docs</td>
+          <td>Prepare handoff and management packet for monthly SEO contractor: local keyword targets, competitor notes, content priorities, reporting cadence, and performance KPI checklist.</td>
+          <td class="hours">2.0</td>
+        </tr>
+        <tr class="total-row">
+          <td colspan="2">Total Pending</td>
+          <td class="hours">3.0</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Monthly SEO Maintenance Recommendation (Outsourced)</h2>
+    <ul>
+      <li>Google Business Profile optimization and weekly post/update cadence.</li>
+      <li>Local citation consistency checks (Name/Address/Phone) and directory hygiene.</li>
+      <li>Monthly metadata/content refresh based on search trends and seasonality.</li>
+      <li>Review and response process for reputation signals (Google/Yelp).</li>
+      <li>Monthly reporting dashboard with leads/calls/rank movement summary.</li>
+    </ul>
+
+    <p class="footer-note">Export to PDF: open this file in browser and choose Print -> Save as PDF.</p>
+  </main>
+</body>
+</html>

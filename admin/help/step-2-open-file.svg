@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <rect width="1200" height="700" fill="#0d1117"/>
+  <rect x="40" y="40" width="1120" height="620" rx="14" fill="#161b22" stroke="#30363d"/>
+  <text x="80" y="95" fill="#e6edf3" font-size="34" font-family="Segoe UI, Arial">Step 2: Open A File</text>
+  <text x="80" y="135" fill="#8b949e" font-size="22" font-family="Segoe UI, Arial">Click menu PDF or image file</text>
+  <rect x="80" y="180" width="1040" height="390" rx="10" fill="#0d1117" stroke="#30363d"/>
+  <rect x="110" y="230" width="980" height="58" rx="8" fill="#21262d"/>
+  <text x="140" y="267" fill="#c9d1d9" font-size="24" font-family="Segoe UI, Arial">files / Dinner.pdf</text>
+  <rect x="110" y="310" width="980" height="58" rx="8" fill="#21262d"/>
+  <text x="140" y="347" fill="#c9d1d9" font-size="24" font-family="Segoe UI, Arial">files / Lunch.pdf</text>
+  <rect x="110" y="390" width="980" height="58" rx="8" fill="#21262d"/>
+  <text x="140" y="427" fill="#c9d1d9" font-size="24" font-family="Segoe UI, Arial">images / chef.jpg</text>
+  <path d="M970 230 L1050 170" stroke="#f1e05a" stroke-width="6"/>
+  <rect x="1030" y="138" width="62" height="44" rx="8" fill="#238636"/>
+  <text x="1045" y="168" fill="#fff" font-size="26" font-family="Segoe UI, Arial">?</text>
+  <circle cx="1020" cy="520" r="95" fill="#238636"/>
+  <text x="969" y="528" fill="#ffffff" font-size="48" font-family="Segoe UI, Arial">2</text>
+</svg>

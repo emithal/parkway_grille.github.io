@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <rect width="1200" height="700" fill="#0d1117"/>
+  <rect x="40" y="40" width="1120" height="620" rx="14" fill="#161b22" stroke="#30363d"/>
+  <text x="80" y="95" fill="#e6edf3" font-size="34" font-family="Segoe UI, Arial">Step 4: Commit Changes</text>
+  <text x="80" y="135" fill="#8b949e" font-size="22" font-family="Segoe UI, Arial">Add a short message, commit directly to master</text>
+  <rect x="80" y="190" width="1040" height="300" rx="10" fill="#0d1117" stroke="#30363d"/>
+  <text x="110" y="245" fill="#c9d1d9" font-size="22" font-family="Segoe UI, Arial">Commit message</text>
+  <rect x="110" y="265" width="980" height="52" rx="8" fill="#21262d"/>
+  <text x="130" y="298" fill="#8b949e" font-size="20" font-family="Segoe UI, Arial">Update Dinner.pdf menu file</text>
+  <text x="110" y="370" fill="#c9d1d9" font-size="22" font-family="Segoe UI, Arial">Branch:</text>
+  <text x="200" y="370" fill="#58a6ff" font-size="22" font-family="Segoe UI, Arial">Commit directly to the master branch</text>
+  <rect x="110" y="410" width="300" height="56" rx="10" fill="#238636"/>
+  <text x="132" y="447" fill="#ffffff" font-size="23" font-family="Segoe UI, Arial">Commit changes</text>
+  <circle cx="1020" cy="520" r="95" fill="#238636"/>
+  <text x="969" y="528" fill="#ffffff" font-size="48" font-family="Segoe UI, Arial">4</text>
+</svg>
