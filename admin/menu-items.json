@@ -3,84 +3,84 @@
     "key": "breakfast",
     "label": "Breakfast Menu",
     "page": "/menus/",
-    "pdf": "/files/Breakfast.pdf",
+    "pdf": "/files/Breakfast Menu.pdf",
     "enabled": true
   },
   {
     "key": "easter",
     "label": "Easter Menu",
     "page": "/easter-menu/",
-    "pdf": "/files/Easter.pdf",
+    "pdf": "/files/Easter Menu.pdf",
     "enabled": true
   },
   {
     "key": "brunch",
     "label": "Brunch Menu",
     "page": "/brunch/",
-    "pdf": "/files/Brunch.pdf",
+    "pdf": "/files/Brunch Menu.pdf",
     "enabled": true
   },
   {
     "key": "lunch",
     "label": "Lunch Menu",
     "page": "/lunch/",
-    "pdf": "/files/Lunch.pdf",
+    "pdf": "/files/Lunch Menu.pdf",
     "enabled": true
   },
   {
     "key": "dinner",
     "label": "Dinner Menu",
     "page": "/dinner/",
-    "pdf": "/files/Dinner.pdf",
+    "pdf": "/files/Dinner Menu.pdf",
     "enabled": true
   },
   {
     "key": "sunday-supper",
     "label": "Sunday Supper",
     "page": "/sunday-supper/",
-    "pdf": "/files/SundaySupper.pdf",
+    "pdf": "/files/Sunday Supper Menu.pdf",
     "enabled": true
   },
   {
     "key": "happy-hour",
     "label": "Happy Hour",
     "page": "/happy-hour/",
-    "pdf": "/files/HappyHour.pdf",
+    "pdf": "/files/Happy Hour Menu.pdf",
     "enabled": true
   },
   {
     "key": "kids",
     "label": "Kids Menu",
     "page": "/kids-menu/",
-    "pdf": "/files/KidsMenu.pdf",
+    "pdf": "/files/Kids Menu.pdf",
     "enabled": true
   },
   {
     "key": "beverage",
     "label": "Beverage Menu",
     "page": "/beverage-menu/",
-    "pdf": "/files/Beverages.pdf",
+    "pdf": "/files/Beverage Menu.pdf",
     "enabled": true
   },
   {
     "key": "dessert",
     "label": "Dessert Menu",
     "page": "/dessert-menu/",
-    "pdf": "/files/Dessert.pdf",
+    "pdf": "/files/Dessert Menu.pdf",
     "enabled": true
   },
   {
     "key": "catering",
     "label": "Catering Menu",
     "page": "/catering/",
-    "pdf": "/files/Catering.pdf",
+    "pdf": "/files/Catering Menu.pdf",
     "enabled": true
   },
   {
     "key": "late-night",
     "label": "Late Night Menu",
     "page": "/late-night/",
-    "pdf": "/files/LateNightMenu.pdf",
+    "pdf": "/files/Late Night Menu.pdf",
     "enabled": true
   }
 ]

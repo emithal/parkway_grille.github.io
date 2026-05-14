@@ -4,7 +4,74 @@
     return path.startsWith('/') ? path : '/' + path;
   }
 
-  async function loadMenuItems() {
+  function toTitleFromPdfName(name) {
+    var base = String(name || '').replace(/\.pdf$/i, '');
+    base = base.replace(/[_-]+/g, ' ');
+    base = base.replace(/\s+/g, ' ').trim();
+    return base.replace(/\b\w/g, function (m) { return m.toUpperCase(); });
+  }
+
+  function slugify(text) {
+    return String(text || '')
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-+|-+$/g, '');
+  }
+
+  function routeForLabel(label) {
+    var key = slugify(String(label || '').replace(/\s*menu$/i, ''));
+    var known = {
+      'breakfast': '/menus/',
+      'easter': '/easter-menu/',
+      'brunch': '/brunch/',
+      'lunch': '/lunch/',
+      'dinner': '/dinner/',
+      'sunday-supper': '/sunday-supper/',
+      'happy-hour': '/happy-hour/',
+      'kids': '/kids-menu/',
+      'beverage': '/beverage-menu/',
+      'dessert': '/dessert-menu/',
+      'catering': '/catering/',
+      'late-night': '/late-night/'
+    };
+    return known[key] || '';
+  }
+
+  function buildFromPdfListing(listing) {
+    return listing
+      .filter(function (entry) {
+        return entry && entry.type === 'file' && /\.pdf$/i.test(entry.name) && /\bmenu\.pdf$/i.test(entry.name);
+      })
+      .map(function (entry) {
+        var label = toTitleFromPdfName(entry.name);
+        var page = routeForLabel(label);
+        return {
+          key: slugify(label),
+          label: label,
+          page: page,
+          pdf: '/files/' + entry.name,
+          enabled: true
+        };
+      })
+      .sort(function (a, b) {
+        return a.label.localeCompare(b.label);
+      });
+  }
+
+  async function loadMenuItemsFromGithubFiles() {
+    var url = 'https://api.github.com/repos/emithal/parkway_grille.github.io/contents/files?ref=master';
+    try {
+      var res = await fetch(url, { cache: 'no-store' });
+      if (!res.ok) return [];
+      var listing = await res.json();
+      if (!Array.isArray(listing)) return [];
+      return buildFromPdfListing(listing);
+    } catch (err) {
+      return [];
+    }
+  }
+
+  async function loadMenuItemsFromJson() {
     var candidates = ['/admin/menu-items.json', 'admin/menu-items.json'];
     for (var i = 0; i < candidates.length; i += 1) {
       try {
@@ -17,6 +84,12 @@
       }
     }
     return [];
+  }
+
+  async function loadMenuItems() {
+    var fromGithub = await loadMenuItemsFromGithubFiles();
+    if (fromGithub.length) return fromGithub;
+    return loadMenuItemsFromJson();
   }
 
   function buildLink(item) {
@@ -106,8 +179,7 @@
   }
 
   async function initMenus() {
-    var hasMenuLayout = document.querySelector('.menu-main-section');
-    if (!hasMenuLayout) return;
+    var hasMenuLayout = !!document.querySelector('.menu-main-section');
 
     var items = await loadMenuItems();
     items = items.filter(function (item) { return item && item.enabled !== false; });
@@ -116,9 +188,11 @@
     var currentKey = (document.body && document.body.dataset.menuKey) || '';
     var currentItem = pickCurrentItem(items, currentKey);
 
-    renderSidebar(items, currentItem ? currentItem.key : '');
     renderDropdown(items);
-    renderViewer(currentItem);
+    if (hasMenuLayout) {
+      renderSidebar(items, currentItem ? currentItem.key : '');
+      renderViewer(currentItem);
+    }
   }
 
   if (document.readyState === 'loading') {

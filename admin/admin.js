@@ -180,7 +180,7 @@
     tr.innerHTML =
       '<td><input type="text" data-k="label" value="' + (item.label || '') + '"></td>' +
       '<td><input type="text" data-k="page" value="' + (item.page || '') + '" placeholder="/dinner/"></td>' +
-      '<td><input type="text" data-k="pdf" value="' + (item.pdf || '') + '" placeholder="/files/Dinner.pdf"></td>' +
+      '<td><input type="text" data-k="pdf" value="' + (item.pdf || '') + '" placeholder="/files/Dinner Menu.pdf"></td>' +
       '<td>' + liveBadge + '</td>' +
       '<td><input type="checkbox" data-k="enabled" ' + (item.enabled !== false ? 'checked' : '') + '></td>' +
       '<td class="row"></td>';
