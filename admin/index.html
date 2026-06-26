@@ -7,8 +7,26 @@
   <link rel="stylesheet" href="/admin/admin.css">
 </head>
 <body>
-  <div class="wrap">
+  <div class="wrap" id="login-wrap">
+    <section class="panel login-panel">
+      <h1>Admin Login</h1>
+      <p class="subtitle">Enter the admin username and password to view website update instructions.</p>
+      <form id="admin-login-form" class="login-form">
+        <label for="admin-user">Username</label>
+        <input id="admin-user" type="text" autocomplete="username" required>
+
+        <label for="admin-pass">Password</label>
+        <input id="admin-pass" type="password" autocomplete="current-password" required>
+
+        <button class="btn primary" type="submit">Login</button>
+        <p class="status" id="login-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </div>
+
+  <div class="wrap" id="admin-content" hidden>
     <section class="panel">
+      <button class="btn logout-btn" id="admin-logout" type="button">Logout</button>
       <h1>Website Update Instructions</h1>
       <p class="subtitle">Simple steps to update menus and photos on the live website.</p>
 
@@ -88,5 +106,51 @@
       </ul>
     </section>
   </div>
+  <script>
+    (function () {
+      var user = document.getElementById('admin-user');
+      var pass = document.getElementById('admin-pass');
+      var form = document.getElementById('admin-login-form');
+      var loginWrap = document.getElementById('login-wrap');
+      var content = document.getElementById('admin-content');
+      var status = document.getElementById('login-status');
+      var logout = document.getElementById('admin-logout');
+      var key = 'parkway-admin-auth';
+
+      function showAdmin() {
+        loginWrap.hidden = true;
+        content.hidden = false;
+      }
+
+      function showLogin() {
+        loginWrap.hidden = false;
+        content.hidden = true;
+      }
+
+      if (sessionStorage.getItem(key) === 'true') {
+        showAdmin();
+      }
+
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        if (user.value.trim() === 'admin' && pass.value === 'admin') {
+          sessionStorage.setItem(key, 'true');
+          status.textContent = '';
+          showAdmin();
+          return;
+        }
+        status.textContent = 'Incorrect username or password.';
+        pass.value = '';
+        pass.focus();
+      });
+
+      logout.addEventListener('click', function () {
+        sessionStorage.removeItem(key);
+        user.value = '';
+        pass.value = '';
+        showLogin();
+      });
+    })();
+  </script>
 </body>
 </html>
