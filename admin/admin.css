@@ -60,6 +60,44 @@ h1 {
   margin-top: 8px;
 }
 
+.password-form {
+  max-width: 640px;
+}
+
+.password-form label {
+  font-size: 1rem;
+}
+
+.password-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.password-actions .btn {
+  text-decoration: none;
+}
+
+.password-steps {
+  max-width: 860px;
+  margin: 18px 0 28px 24px;
+}
+
+.password-steps li {
+  margin: 10px 0;
+}
+
+.config-output {
+  min-height: 120px;
+  width: 100%;
+  border: 1px solid #40485e;
+  background: #10141d;
+  color: var(--text);
+  border-radius: 10px;
+  padding: 10px;
+  resize: vertical;
+}
+
 .logout-btn {
   float: right;
   margin-left: 16px;
